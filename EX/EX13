@@ -1,0 +1,29 @@
+#include <iostream>
+#include <locale>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    int NUM[15], par = 0, impar = 0, i;
+
+
+  for (i=0; i<15; i++)
+  {
+     cout << "Digite o "<<1+i<<"º número:"<< endl;
+     cin >> NUM[i];
+  }
+
+  for (i=0; i<15; i++)
+  {
+    if (NUM[i] % 2 == 0)
+     cout << NUM[i] << " - par "<<endl;
+    else
+     cout <<  NUM[i] << " - ímpar "<<endl;
+  }
+
+
+
+    return 0;
+}

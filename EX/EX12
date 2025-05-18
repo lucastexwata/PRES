@@ -1,0 +1,25 @@
+#include <iostream>
+#include <locale>
+
+using namespace std;
+
+int main()
+{
+    setlocale(LC_ALL, "Portuguese");
+    int valor = 0, soma = 0, i = 0, NUM = 0;
+
+    cout << "Digite a quantidade de produtos que deseja comprar: "<<endl;
+    cin >> NUM;
+
+    for (i=0; i<NUM; i++)
+    {
+     int valor[NUM];
+     cout << "Digite o valor do produto: "<<(1+i)<<":"<< endl;
+     cin >> valor[i];
+     soma += valor[i];
+    }
+     cout << "A soma dos produtos comprados é: "<<soma<<endl;
+
+
+    return 0;
+}
